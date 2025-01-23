@@ -1,5 +1,5 @@
 <?php 
-    $con = new mysqli("localhost", "root", "", "property_sales_db");
+    $con = new mysqli("db", "php_docker", "password", "php_docker");
 
     if($con->connect_error)
     {
