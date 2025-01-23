@@ -6,7 +6,7 @@ $phone = $_POST['phone'];
 $email = $_POST['email'];
 $address = $_POST['address'];
 
-$sql = "INSERT agent VALUES('', '$name', '$phone', '$email', '$address')";
+$sql = "INSERT INTO agent (agent_name, agent_email, agent_contact, agent_address) VALUES ('$name', '$email', '$phone', '$address')";
 
 if ($con->query($sql))
     {
